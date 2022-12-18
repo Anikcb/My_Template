@@ -1,3 +1,4 @@
+//  Functions
 
 transform(data.begin(), data.end(), data.begin(),[](unsigned char c){ return std::tolower(c); });
 typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> ordered_set;
@@ -15,3 +16,19 @@ set< pair<int,int> >s;
 pair<int,int> p={3,2};
 auto lb=lower_bound(s.begin(),s.end(),p);
 cout<<(*lb).first<<" "<<(*lb).second<<endl;
+
+
+// BitWise Operations
+int Set(int N,int pos){return N=N | (1<<pos);}
+int reset(int N,int pos){return N= N & ~(1<<pos);}
+bool check(int N,int pos){return (bool)(N & (1<<pos));}
+
+
+// Grids
+const int fx[] = {+1,-1,+0,+0};
+const int fy[] = {+0,+0,+1,-1};
+const int fx[] = {+0,+0,+1,-1,-1,+1,-1,+1}; ///King's move
+const int fy[] = {-1,+1,+0,+0,+1,+1,-1,-1}; ///king's Move
+const int fx[] = {-2,-2,-1,-1,+1,+1,+2,+2}; ///knight's move
+const int fy[] = {-1,+1,-2,+2,-2,+2,-1,+1}; ///knight's move
+
