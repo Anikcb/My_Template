@@ -12,16 +12,20 @@ typedef unsigned long long ull;
 
 
 /*** STLs ***/
-typedef vector <ll> vll;
 typedef set <ll> sll;
-typedef multiset <ll> msll;
+typedef set <int> sii;
 typedef queue <ll> qll;
 typedef stack <ll> stll;
+typedef vector <ll> vll;
+typedef vector <int> vii;
 typedef map <ll, ll> mll;
+typedef map <int, int> mii;
 typedef pair <ll, ll> pll;
-typedef vector <pair <ll , ll> > vpll;
-typedef map<string,ll> msl;
+typedef multiset <ll> msll;
+typedef pair <int, int> pii;
 typedef priority_queue<ll> pql;
+typedef vector <pair <ll , ll> > vpll;
+typedef vector <pair <int , int> > vpii;
 typedef priority_queue<ll,vector<ll>,greater<ll> > npql;
 
 
@@ -62,11 +66,9 @@ const ll INF = 1122334455667788990;
 #define     forIn1(arr, num)  for(ll i = 1; i <= num; i++) cin>>arr[i];
 #define     Unique(X)         (X).resize(unique(all(X))-(X).begin())
 #define     IOS               ios_base::sync_with_stdio(false); cin.tie(NULL);
-
+#define     prnt(arr,x,num)   for(ll i=x; i<num;i++)cout<<arr[i]<<(i + 1 < num ? ' ' : '\n');
 
 //__uint128_t
-ll A[N*10];
-ll B[N*10];
 
 
 int main()
