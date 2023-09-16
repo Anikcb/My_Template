@@ -1,6 +1,11 @@
 
 
 
+// Lambda Function
+auto pairs_sort = [](pair<int, float> a, pair<int, float> b) {return (a.second > b.second);  };
+vector<pair<int, float>> test_vector = { {0,0.3}, {1, 0.2}, {3, 0.9}, {4, 1.5}, {5, 0.15} };
+sort(test_vector.begin(), test_vector.end(), pairs_sort);
+
 
 // Convert To Lower Case Latter
 transform(data.begin(), data.end(), data.begin(),[](unsigned char c){ return std::tolower(c); });
